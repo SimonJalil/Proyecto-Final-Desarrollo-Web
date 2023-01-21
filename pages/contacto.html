@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Document</title>
+</head>
+<body class="principal">
+
+    <header>
+
+        <div><img src="../assets/favicon/android-icon-72x72.png" alt="Logo de pagina"></div>
+        
+        <div><h1 id="contactos">Contactos</h1></div>
+
+        <!--Punto 1: Lista no ordenada-->
+        <div>  
+          <ul class="menu">
+              <li>
+                  <a href="../index.html">Home</a> 
+              </li>
+              
+              <li>
+                  <a href="./pedidos.html">Pedidos</a>
+              </li>
+              
+              <li>
+                  <a href="./company.html">Compañia</a> 
+              </li>
+              
+              <li>
+                  <a href="./productos.html">Productos</a>
+              </li>
+          </ul>
+        </div>
+    </header>
+
+    <main class="principal"> 
+      
+      <fieldset class="form">
+        <legend>Contacto</legend>
+        
+        <form action="" method="">
+          
+          <!--Campo NOMBRE-->
+          <div>
+            <label for="nombre" >Ingrese su nombre: 
+              <input type="text" id="nombre" required>
+            </label>
+          </div>
+          
+          <!--Campo APELLIDO-->
+          <div>
+            <label for="apellido"> Ingrese apellido: 
+              <input type="text" id="apellido" required>
+            </label>
+          </div>
+
+          <!--Campo DIRECCION-->
+          <div>
+            <label for="direccion">Ingrese direccion:
+              <input type="text" id="direccion" required>
+            </label>
+          </div>
+
+          <!--Campo NUMERO-->
+          <div>
+            <label for="numero">Ingrese numero:
+              <input type="text" id="numero" required>
+            </label>
+          </div>
+
+          <br>
+
+          <!--BOTONES-->
+          <div>
+            <input type="submit" id="enviar" value="Enviar">
+            <input type="reset" id="limpiar" value="Limpiar"> 
+          </div>
+
+        </form>
+      </fieldset>
+
+
+    </main>
+
+    <footer>
+        
+        <h6 class="texto">#Derechos reservados</h6>
+
+    </footer>
+
+</body>
+</html>

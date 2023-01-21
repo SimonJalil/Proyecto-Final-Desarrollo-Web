@@ -1,0 +1,79 @@
+/* Fuentes de letras para titulos */
+@font-face{
+    font-family: "lokicola";
+    src: url(../assets/fonts/loki_cola/LOKICOLA.TTF);
+}
+
+@font-face{
+    font-family: "magazine";
+    src: url(../assets/fonts/magazine_letter/MagazineLetterByBrntlbrnl-Regular.ttf);
+}
+
+@font-face{
+    font-family: "omelette";
+    src: url(../assets/fonts/omelette/Omelette.otf);
+}
+
+@font-face{
+    font-family: "sunday";
+    src: url(../assets/fonts/sunday/SUNDAY.ttf);
+}
+
+/* Reset de navegador */
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:#909320;
+    font-family: sunday;
+}
+
+ul{
+    font-family: omelette;
+    font-size: 150%;
+    list-style-type: none;
+    color:bisque;
+}
+
+ul li{
+    display: inline;
+}
+
+ul li a{
+    text-decoration: none;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.principal{
+    padding: 5px 10px 12px 15px;
+    border: 5px black solid;
+}
+
+.texto{
+    font-family: omelette;
+}
+
+.logo{
+    border: 5px dashed black;
+}
+
+.encabezado{
+    padding: 10px;
+    text-decoration: underline black 5px;
+}
+
+.form{
+    position: relative;
+    left: 20px;
+    border: none;
+}
+
+.imagen{
+    width: 400px; 
+    height: 200px;
+    border: solid black 5px; 
+    border-radius: 8%;
+}
