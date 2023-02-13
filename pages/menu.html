@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> <!--REMIX ICON-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../assets/favicon/logo/favicon-16x16.png">
+    <title>Fast Food: Menu</title>
+</head>
+<body class="section">
+    
+    <!-- Botones de wzp,insta,face -->
+    <a href="https://www.whatsapp.com/?lang=es" class="btn-wsp" target="_blank" target="_banck">
+        <i class="icon-wsp">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbRJREFUSEvNleExBEEQRt9lQATIQAbIgAgQASJABIiADMiAiwARkAEioN5V99aYnZ37dVXXVVNXtzvTX/fr7tkZK7bZiv2zFgL7wDGwG+sbeANegHn8ToLoZbAN3AMK/BRON0JoL7w+AaeAwiObEjDaZ1ggvAWuJkI8B27C+VErm5aAEX5E1IcRea8XDOYB2AJ26kxaAqYsFpesFXR9dlQUeQU8ayaD1QK58TqwWAcPytfoepa4FFBoYbWAvM+AzXCah9xrIUXRs1/gDvBcU8DW08SjlQL/IptQqc+PMpCzm07CgYgsuIjMaplJwJkZ9taIFLCwdk9aZiEeMfXMdr4s0dcCoxTDm86NzN8LIIfQYso8h8z/NorvmzXIItsxdVvmO5250kl2nA59rkgiHtUgmZeHSiQWXwx5TXiF5Lzo1KvloJzo1qBNYSqFDMRlvTIb5+W96MAmIh+OenlJYWVu5GLNbIYjdQZ2z2MU8isOWIuykHnY68OhtMv0M3LuxqlJbgUtOsVEYtQ5jH4T5N+8q2oBmeaw6dD/sjbKbD8j97nLjsmaNUmuxSdz2fXQfb/yDP4AZJloGU7UfncAAAAASUVORK5CYII="/>
+        </i>
+    </a>
+    <a href="https://www.instagram.com/" class="btn-insta" target="_banck">
+        <i class="icon-insta">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAX1JREFUSEvNlU0yBEEQhb+5gZUtToATYGOLA4jgBm6AEwg7O5zAWFrhBDgB4QJ+LkB8olLUVJTumkXHyIiKmumuypf5MvP1iIFtNLB/ZgawCBwCK2l1JfoIuE7TPnG2lsEecJ5O3QPvtYvpvQHMAWvp/z5wkSOUAF54AHS8nZy3lMmMx8AysJoHVAKIrmMvGHmf7QLHwAewAzwDl4As/FgJ8AK41iueBTZCTc6vgU3gBngFFoC7tC/9BfCVinWQAcjxbaXYOjsDPoH5FLnPrMdv4GUGApjyUQZgtFJm2vKsmY10Wq+N7OzUADq6SvyG8/AX3Sb38W5qADNxHmrtLHVvRcb/D2BwiqIlbUE5tzU1f58AT0VLN1GkppRt6sWYgShybdp7AfoGTSmJrMqu8rkAtrSrOsn29hbgJLZIRT7wOu2VihA7I1EZzajFdO68eL9T7KKAIdcCdcl1aFbsvXId0RqJhfaiHdRlKqmBOJTKyoTN7JPZwnvTmcEz+AZJz2cZU1H38wAAAABJRU5ErkJggg=="/>
+        </i>
+    </a>
+    <a href="https://es-la.facebook.com/" class="btn-face" target="_banck">
+        <i class = "icon-face">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlIEJwjAQRV836AY6ghtUJ9EROoJOoCO4ghvoBDqCbuAGlQ8JHGo9UhJUaKBw0Ob/+4+7VhQ+VWF9fs5gCmyBGaBa5wTM+0ikJJDgGaifxLIZ7IHlm06zGRyBJhgcgBVw94YkBVFnxDbA2hPX+68bCMMkdGo7Fi49cYpi/RLKS2C59xH5iCuHwcKkSU6wC0uli3GCVN+Aa1BrgUuORfvPKbLJxwTu4o+IXESDPvB+FYNE7aXiBg+0MykZNmDKCAAAAABJRU5ErkJggg=="/>
+        </i>
+    </a>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white shadow py-3">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../assets/favicon/logo/android-icon-72x72.png" alt="logo" id = "logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                  
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="./menu.html">Menú</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pedidos.html">Pedidos</a>
+                  </li>
+                </ul>
+  
+                <a href="./ingresar.html" class="btn btn-brand">Ingresar</a>
+              </div>
+            </div>
+          </nav>
+      </header>
+
+    <br>
+    <br>
+
+    <!-- Main -->
+    <main>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 intro-text">
+              <h1>Explora nuestro menu</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sequi libero optio placeat amet provident impedit, iste id laudantium harum est numquam consequatur iure velit natus at. Minus ipsa repellat perferendis dolor autem omnis illum deleniti delectus suscipit doloribus voluptatum, quisquam, cum nam. Impedit totam unde sint suscipit? Vel, obcaecati?</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    <section id = "menu">
+      <div class="container">
+        
+        <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-todos-tab" data-bs-toggle="pill" data-bs-target="#pills-todos" type="button" role="tab" aria-controls="pills-todos" aria-selected="true">
+              Todos los platos
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-desayuno-tab" data-bs-toggle="pill" data-bs-target="#pills-desayuno" type="button" role="tab" aria-controls="pills-desayuno" aria-selected="false">
+              Desayuno
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-almuerzo-tab" data-bs-toggle="pill" data-bs-target="#pills-almuerzo" type="button" role="tab" aria-controls="pills-almuerzo" aria-selected="false">
+              Almuerzo
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-cena-tab" data-bs-toggle="pill" data-bs-target="#pills-cena" type="button" role="tab" aria-controls="pills-cena" aria-selected="false">
+              Cena
+            </button>
+          </li>
+          
+        
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+
+          <div class="tab-pane fade show active" id="pills-todos" role="tabpanel" aria-labelledby="pills-todos-tab" tabindex="0">
+            <div class="row gy-4">
+              
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="../assets/images/item_1.jpg" alt="item 1">
+                  <div class="menu-item-content p-4">
+                    <div>
+                      <span>Ranking(5.5)</span>
+                      <span class="stars" >
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                      </span>
+                    </div>
+                    <h5 class="mt-1 mb-2"><a href="#">Lorem, ipsum dolor.</a></h5>
+                    <p class="small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum consequuntur magnam nihil fugit nisi similique.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="../assets/images/item_2.jpg" alt="item 2">
+                  <div class="menu-item-content p-4">
+                    <div>
+                      <span>Ranking(5.5)</span>
+                      <span class="stars" >
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                      </span>
+                    </div>
+                    <h5 class="mt-1 mb-2"><a href="#">Lorem, ipsum dolor.</a></h5>
+                    <p class="small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum consequuntur magnam nihil fugit nisi similique.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="../assets/images/item_3.jpg" alt="item 3">
+                  <div class="menu-item-content p-4">
+                    <div>
+                      <span>Ranking(5.5)</span>
+                      <span class="stars" >
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                      </span>
+                    </div>
+                    <h5 class="mt-1 mb-2"><a href="#">Lorem, ipsum dolor.</a></h5>
+                    <p class="small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum consequuntur magnam nihil fugit nisi similique.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="../assets/images/item_4.jpg" alt="item 4">
+                  <div class="menu-item-content p-4">
+                    <div>
+                      <span>Ranking(5.5)</span>
+                      <span class="stars" >
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                      </span>
+                    </div>
+                    <h5 class="mt-1 mb-2"><a href="#">Lorem, ipsum dolor.</a></h5>
+                    <p class="small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum consequuntur magnam nihil fugit nisi similique.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="../assets/images/item_5.jpg" alt="item 5">
+                  <div class="menu-item-content p-4">
+                    <div>
+                      <span>Ranking(5.5)</span>
+                      <span class="stars" >
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                      </span>
+                    </div>
+                    <h5 class="mt-1 mb-2"><a href="#">Lorem, ipsum dolor.</a></h5>
+                    <p class="small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum consequuntur magnam nihil fugit nisi similique.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="../assets/images/item_6.jpg" alt="item 6">
+                  <div class="menu-item-content p-4">
+                    <div>
+                      <span>Ranking(5.5)</span>
+                      <span class="stars" >
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                      </span>
+                    </div>
+                    <h5 class="mt-1 mb-2"><a href="#">Lorem, ipsum dolor.</a></h5>
+                    <p class="small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum consequuntur magnam nihil fugit nisi similique.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="../assets/images/item_7.jpg" alt="item 7">
+                  <div class="menu-item-content p-4">
+                    <div>
+                      <span>Ranking(5.5)</span>
+                      <span class="stars" >
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                      </span>
+                    </div>
+                    <h5 class="mt-1 mb-2"><a href="#">Lorem, ipsum dolor.</a></h5>
+                    <p class="small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum consequuntur magnam nihil fugit nisi similique.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="../assets/images/item_8.jpg" alt="item 8">
+                  <div class="menu-item-content p-4">
+                    <div>
+                      <span>Ranking(5.5)</span>
+                      <span class="stars" >
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                      </span>
+                    </div>
+                    <h5 class="mt-1 mb-2"><a href="#">Lorem, ipsum dolor.</a></h5>
+                    <p class="small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum consequuntur magnam nihil fugit nisi similique.</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="pills-desayuno" role="tabpanel" aria-labelledby="pills-desayuno-tab" tabindex="0">
+            <div class="row gy-4">
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="../assets/images/item_3.jpg" alt="item 3">
+                  <div class="menu-item-content p-4">
+                    <div>
+                      <span>Ranking(5.5)</span>
+                      <span class="stars" >
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                      </span>
+                    </div>
+                    <h5 class="mt-1 mb-2"><a href="#">Lorem, ipsum dolor.</a></h5>
+                    <p class="small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum consequuntur magnam nihil fugit nisi similique.</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="../assets/images/item_4.jpg" alt="item 4">
+                  <div class="menu-item-content p-4">
+                    <div>
+                      <span>Ranking(5.5)</span>
+                      <span class="stars" >
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                      </span>
+                    </div>
+                    <h5 class="mt-1 mb-2"><a href="#">Lorem, ipsum dolor.</a></h5>
+                    <p class="small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum consequuntur magnam nihil fugit nisi similique.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-pane fade" id="pills-almuerzo" role="tabpanel" aria-labelledby="pills-almuerzo-tab" tabindex="0">
+            <div class="row">
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="../assets/images/item_1.jpg" alt="item 1">
+                  <div class="menu-item-content p-4">
+                    <div>
+                      <span>Ranking(5.5)</span>
+                      <span class="stars" >
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                      </span>
+                    </div>
+                    <h5 class="mt-1 mb-2"><a href="#">Lorem, ipsum dolor.</a></h5>
+                    <p class="small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum consequuntur magnam nihil fugit nisi similique.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="../assets/images/item_2.jpg" alt="item 2">
+                  <div class="menu-item-content p-4">
+                    <div>
+                      <span>Ranking(5.5)</span>
+                      <span class="stars" >
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                      </span>
+                    </div>
+                    <h5 class="mt-1 mb-2"><a href="#">Lorem, ipsum dolor.</a></h5>
+                    <p class="small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum consequuntur magnam nihil fugit nisi similique.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="../assets/images/item_6.jpg" alt="item 6">
+                  <div class="menu-item-content p-4">
+                    <div>
+                      <span>Ranking(5.5)</span>
+                      <span class="stars" >
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                      </span>
+                    </div>
+                    <h5 class="mt-1 mb-2"><a href="#">Lorem, ipsum dolor.</a></h5>
+                    <p class="small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum consequuntur magnam nihil fugit nisi similique.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="tab-pane fade" id="pills-cena" role="tabpanel" aria-labelledby="pills-cena-tab" tabindex="0">
+            <div class="row gy-4">
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="../assets/images/item_5.jpg" alt="item 5">
+                  <div class="menu-item-content p-4">
+                    <div>
+                      <span>Ranking(5.5)</span>
+                      <span class="stars" >
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                      </span>
+                    </div>
+                    <h5 class="mt-1 mb-2"><a href="#">Lorem, ipsum dolor.</a></h5>
+                    <p class="small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum consequuntur magnam nihil fugit nisi similique.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="../assets/images/item_7.jpg" alt="item 7">
+                  <div class="menu-item-content p-4">
+                    <div>
+                      <span>Ranking(5.5)</span>
+                      <span class="stars" >
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                      </span>
+                    </div>
+                    <h5 class="mt-1 mb-2"><a href="#">Lorem, ipsum dolor.</a></h5>
+                    <p class="small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum consequuntur magnam nihil fugit nisi similique.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+
+      </div>
+    </section>
+
+    </main>
+
+    <br>
+    <br>
+    
+    <!--Footer-->
+    <footer>
+      <div class="footer-top">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-4">
+                      <img src="../assets/favicon/logo/android-icon-72x72.png" class="mb-4" alt="logo">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quam enim provident, sint sit natus praesentium mollitia. Dolore, mollitia obcaecati.</p>
+                      <div class="social-links">
+                          <a href="https://es-la.facebook.com/" target="_blanck"><i class="ri-facebook-circle-fill"></i></a>
+                          <a href="https://www.instagram.com/" target="_blanck"><i class="ri-instagram-line"></i></a>
+                          <a href="https://www.whatsapp.com/?lang=es" target="_blanck"><i class="ri-whatsapp-line"></i></a>
+                          <a href="https://www.youtube.com/" target="_blanck"><i class="ri-youtube-line"></i></a>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-3 ms-auto">
+                      <h3 class="text-white">CONOCENOS</h3>
+                      <a href="./unete.html">Unete al equipo</a>
+                      <br>
+                      <a href="./cotizar.html">Cotizar evento</a>
+                      <br>
+                      <a href="./contacto.html">Contáctanos</a>
+                  </div>
+
+                  <div class="col-lg-3 mb-4">   
+                      <h3 class="text-white">MI CUENTA</h3>
+                      <a href="./ingresar.html">Ingresar</a>
+                      <br>
+                      <a href="./pedidos.html">Pedir</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <div class="container">
+              <div class="row justify-content-between">
+                  <div class="col-auto">
+                      <p class="mb-0">Todos los derechos reservados</p>
+                  </div>
+                  <div class="col-auto">
+                      <p class="mb-0">Diseñado por <a href="mailto:simonjalilcruz@gmail.com">Simon Jalil </a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+</html>

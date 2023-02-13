@@ -23,57 +23,309 @@
 *{
     margin:0;
     padding:0;
-}
+    box-sizing: border-box;
+    /*font-sixe: 0; => Esto sirve para eliminar el bug entre dos cajas*/
+}  
 
 body{
-    background-color:#909320;
     font-family: sunday;
+    background-color: #e9e6df;
 }
 
-ul{
-    font-family: omelette;
-    font-size: 150%;
-    list-style-type: none;
-    color:bisque;
-}
-
-ul li{
-    display: inline;
-}
-
-ul li a{
+a{
+    color: #222;
     text-decoration: none;
-    padding-right: 5px;
-    padding-left: 5px;
+    transition: all 0.4s;
+    font-weight: 600;
 }
 
-.principal{
-    padding: 5px 10px 12px 15px;
-    border: 5px black solid;
+a:hover{
+    color: #F58d17;
 }
 
-.texto{
-    font-family: omelette;
+.btn {
+    border: 0;
+    padding: 14px 38px; 
 }
 
-.logo{
-    border: 5px dashed black;
+.btn-brand{
+    color: #fff;
+    font-weight: 500;
+    border-color: #F58d17;
+    background-color: #F58d17; 
 }
 
-.encabezado{
+.btn-brand:hover{
+    border-color: #ca7310;
+    background-color: #ca7310;
+    color: white;
+}
+
+#logo{
+    width: 100%;
+    border-color: black;
+    border-style: solid;
+    border-radius: 50%;
+    margin: 5px 5px;
+}
+
+.bg-cover{
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: none !important;
+}
+
+.slide-1{
+    background: linear-gradient(rgba(0, 0, 0, 0.616),rgba(0, 0, 0, 0.63)), url(../assets/images/cover1.jpg);
+}
+
+.slide-2{
+    background: linear-gradient(rgba(0, 0, 0, 0.616),rgba(0, 0, 0, 0.63)), url(../assets/images/cover2.jpg);
+}
+
+#heroSlider h6::after,
+#heroSlider h6::before{
+    content: " ";
+    width: 40px;
+    height: 4px;
+    background-color: #ffffff;
+    display:inline-block;
+    margin: 10px;
+    vertical-align: middle; 
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    background-color: rgba(0,0,0,0.6);
+    width: 40px; 
+    height: 70px;
+    margin: auto;
+}
+
+main{
+    min-height: 80vh;
+}
+
+.h-img{
+    height: 700px;
+}
+
+
+#intro{
+    width: 50%;
+    background-color: #f14523;
+    border-width: 4px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
     padding: 10px;
-    text-decoration: underline black 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0px 0px 0px 25%;
 }
 
-.form{
-    position: relative;
-    left: 20px;
-    border: none;
+#unete{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("../assets/images/fondo-1-v.jpg");
+    background-size: cover;
+    color: #f14523;
+    width: 100%;
+    height: 500px;
+    font-weight: bold;
 }
 
-.imagen{
-    width: 400px; 
-    height: 200px;
-    border: solid black 5px; 
-    border-radius: 8%;
+#cotizar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("../assets/images/evento-eg.jpg");
+    background-size: cover;
+    color: #f14523;
+    width: 100%;
+    height: 500px;
+    font-weight: bold;
+}
+
+.btn-main{
+    color:white;
+    border: black;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f14523;
+}
+
+.btn-main:hover{
+    color:black;
+    padding: 10px;
+    background-color: white;
+}
+
+footer{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/cover3.jpg);
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+footer p,
+footer a{
+    color: rgba(255, 255, 255, 0.75);
+}
+
+footer .social-links a{
+    font-weight: normal;
+    font-size: 24px;
+    margin-right: 10px; 
+}
+
+footer img{
+    max-width: 175px;
+}
+
+.links_footer{
+    display: inline block; 
+}
+
+.footer-top{
+    margin-bottom: 30px;
+}
+
+.footer-bottom{
+    padding-top: 30px;
+    border-top: 2px solid rgba(255,255,255,0.4);
+}
+
+/*Boton wzp*/
+.btn-wsp{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    bottom: 150px;
+    right: 30px;
+    background-color: #0df053;
+    color:#fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+.btn-wsp:hover{
+    text-decoration: none;
+    color: #0df053;
+    background-color: #fff;
+}
+
+/*Boton insta*/
+.btn-insta{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    bottom:90px;
+    right: 30px;
+    background-color: #b43892;
+    color:#fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+.btn-insta:hover{
+    text-decoration: none;
+    color: #0df053;
+    background-color: #fff;
+}
+
+/*Boton face*/
+.btn-face{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #1877f2;
+    color:#fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+.btn-face:hover{
+    text-decoration: none;
+    color: #0df053;
+    background-color: #fff;
+}
+
+
+ 
+/* Menu */
+
+.intro-text{
+    max-width: 500px;
+    margin:auto;
+}
+
+.intro text p{
+    max-width: 500px;  
+
+}
+
+#menu .nav-pills .nav-link{
+    background-color: #ffff;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #222;
+    border-radius: 100px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+#menu .nav-pills .nav-link.active{
+    background-color: #F58d17;
+    color: #ffffff;
+}
+
+.menu-item .stars{
+    color: #F58d17; 
+
+}
+
+img{
+    width: 100%;
+}
+
+.shadow-on-hover{
+    transition: all 0.3s;
+}
+
+.shadow-on-hover:hover{
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Reservacion */
+#reservacion .form-control{
+    border-radius: 0;
+}
+
+#reservacion .form-control:focus{
+    box-shadow: none;
+    border-color: #F58d17;
+}
+
+#reservacion input.form-control{
+    height: 47px;
 }
