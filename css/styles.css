@@ -240,7 +240,7 @@ img {
 }
 
 .bg-ingresar {
-  background-image: url(../../assets/images/avatar_01.jpg);
+  background-image: url(../assets/images/avatar_01.jpg);
   background-position: center center;
   background-repeat: no-repeat;
 }
