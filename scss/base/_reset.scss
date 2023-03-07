@@ -1,0 +1,7 @@
+/* Reset de navegador */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /*font-sixe: 0; => Esto sirve para eliminar el bug entre dos cajas*/
+}  

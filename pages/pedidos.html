@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="Pagina de formularios de pedidos. En ella se realizan todos los pedidos de delivery de la compañia."> 
+    <meta name="keywords" content="PEDIDOS , DELIVERY, LLAMADOS, SOLICITUDES, COMIDA">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/favicon/logo/favicon-16x16.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body class="section">
+
+  <!--Boton de wzp-->
+  <div class="d-none d-md-block">
+    <a href="https://wa.me/+5492645421856" class="btn-wsp" target="_blank">
+        <i class="ri-whatsapp-line"></i>
+    </a>
+  </div>
     
   <header>
     <nav class="navbar navbar-expand-lg bg-white shadow py-3">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">
-            <img src="../assets/favicon/logo/android-icon-72x72.png" alt="logo" id = "logo">
+            <img src="../assets/favicon/logo/android-icon-72x72.png" alt="logo" class="logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -41,96 +54,96 @@
       </nav>
   </header>
 
-    <main class="bordesNegros">
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="title text-center my-4" data-aos="flip-up" data-aos-duration="1500">PEDIDOS</h1>
+          </div>
+        </div>
       
-        <fieldset class = "form">
-          <legend>Contacto</legend>
-          
-          <form action="" method="" >
-            
-            <!--Campo NOMBRE-->
-            <div>
-              <label for="nombre" >Ingrese su nombre: 
-                <input type="text" id="nombre" required>
-              </label>
+        <div class="row">
+          <div class="col d-none d-md-block" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
+            <div class="row">
+              <p>¿Que te gustaría comer el dia de hoy?</p>
+            </div>
+            <div class="row">
+              <img src="/assets/images/item_2.jpg" alt="plato de comida" class="img-form">
             </div>
             
-            <!--Campo APELLIDO-->
-            <div>
-              <label for="apellido"> Ingrese apellido: 
-                <input type="text" id="apellido" required>
-              </label>
-            </div>
-  
-            <!--Campo DIRECCION-->
-            <div>
-              <label for="direccion">Ingrese direccion:
-                <input type="text" id="direccion" required>
-              </label>
-            </div>
-  
-            <!--Campo LISTA-->
-            <div>
-              <label for="lista">¿Que te vas a comer?</label>
-              <select name="comida" id="lista">
-                <option value="papas">Papas Fritas</option>
-                <option value="pizza">Pizza</option>
-                <option value="pachata">Pachata</option>
-                <option value="lomo">Lomito</option>
-              </select>
-            </div>
-  
-            <!--Campo CANTIDAD-->
-            <div>
-              <label for="cantidad"> Ingrese la cantidad:
-                <input type="number" id="cantidad">
-              </label>
-            </div>
-  
-            <!--Campo DETALLE-->
-            <div>
-              <label for="detalle">
-                <textarea name="observacion" id="detalle" cols="30" rows="10" placeholder="Ingrese algun detalle"></textarea>
-              </label>
-            </div>
-  
-            <!--Campo ENVIO-->
-            <div>
-              <label for="retirar"> Forma de envío: 
-                <input type="radio" name="retiro" id="retirar" checked>Para retirar
-              </label>
-              <label for="domicilio">
-                <input type="radio" name="retiro" id="domicilio"> Para enviar a domicilio 
-              </label>
-            </div>
-  
-            <div>
-              <label for="mercado">Forma de pago:
-                <input type="radio" name="pago" id="mercado">Mercado Pago
-              </label>
-              <label for="debito">
-                <input type="radio" name="pago" id="debito">Tarjeta de Débito
-              </label>
-              <label for="credito">
-                <input type="radio" name="pago" id="credito"> Tarjeta de Credito   
-              </label>
-              <label for="efectivo">
-                <input type="radio" name="pago" id="efectivo" checked>Efectivo
-              </label>
-            </div>
-  
-            <!--BOTONES-->
-            <div>
-              <input type="submit" id="enviar" value="Enviar">
-              <input type="reset" id="limpiar" value="Limpiar"> 
-            </div>
-  
-            <br>
-  
-          </form>
-        </fieldset>
-  
-  
+          </div>
+
+          <div class="col" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="300" data-aos-duration="1500">
+            <fieldset class = "form">
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="nombre" class="form-label">Nombre y Apellido</label>
+                  <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre completo">
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="ejemplo@mail.com">
+                </div>
+                <div class="col-12">
+                  <label for="direccion" class="form-label">Direccion</label>
+                  <input type="text" class="form-control" id="direccion" placeholder="Ingrese direccion aqui...">
+                </div>
+                <div class="col-12">
+                  <label for="comentarios" class="form-label">Comentarios adicionales</label>
+                  <input type="text" class="form-control" id="comentarios" placeholder="Comentarios que ayuden al delivery...">
+                </div>
+                <div class="col-md-6">
+                  <label for="departamento" class="form-label">Departamento</label>
+                  <input type="text" class="form-control" id="departamento">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Cantidad</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Opcion...</option>
+                    <option>Plato Numero 1</option>
+                    <option>Plato Numero 2</option>
+                    <option>Plato Numero 3</option>
+                    <option>Plato Numero 4</option>
+                  </select>
+                </div>
+                
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Cantidad</label>
+                  <input type="number" class="form-control" id="inputZip">
+                </div>
+      
+                <h5>Medio de pago:</h5>
+      
+                <div class="col-12 form-check">
+                  <input class="form-check-input" type="radio" name="medioPago" id="efectivo" checked>
+                  <label class="form-check-label" for="efectivo">
+                    Efectivo
+                  </label>
+                </div>
+                
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="medioPago" id="debito" >
+                  <label class="form-check-label" for="debito">
+                    Debito
+                  </label>
+                </div>
+      
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="medioPago" id="tarjetaCredito" >
+                  <label class="form-check-label" for="tarjetaCredito">
+                    Tarjeta de credito
+                  </label>
+                </div>
+                
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Pedir</button>
+                </div>
+              </form>
+            </fieldset>
+          </div>
+        </div>
+        
+        </div>
       </main>
 
       <!--Footer-->
@@ -139,7 +152,7 @@
           <div class="container">
               <div class="row">
                   <div class="col-lg-4">
-                      <img src="../assets/favicon/logo/android-icon-72x72.png" class="mb-4" alt="logo">
+                      <img src="../assets/favicon/logo/android-icon-72x72.png" class="mb-4 logo" alt="logo">
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quam enim provident, sint sit natus praesentium mollitia. Dolore, mollitia obcaecati.</p>
                       <div class="social-links">
                           <a href="https://es-la.facebook.com/" target="_blanck"><i class="ri-facebook-circle-fill"></i></a>
@@ -149,7 +162,7 @@
                       </div>
                   </div>
 
-                  <div class="col-lg-3 ms-auto">
+                  <div class="col-lg-3 my-4">
                       <h3 class="text-white">CONOCENOS</h3>
                       <a href="./unete.html">Unete al equipo</a>
                       <br>
@@ -158,7 +171,7 @@
                       <a href="./contacto.html">Contáctanos</a>
                   </div>
 
-                  <div class="col-lg-3 mb-4">   
+                  <div class="col-lg-3 my-4">   
                       <h3 class="text-white">MI CUENTA</h3>
                       <a href="./ingresar.html">Ingresar</a>
                       <br>
@@ -183,5 +196,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

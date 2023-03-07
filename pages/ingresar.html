@@ -4,18 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="Pagina de loggeo de cuenta para pagina de restaurante."> 
+    <meta name="keywords" content="EMAIL, CUENTA, LOGIN, LOGOUT, SIGNIN, SIGNOUT">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">  <!-- Link para .css-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/favicon/logo/favicon-16x16.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body class="section">
+
+
+  <!-- Botones de wzp -->
+  <div class="d-none d-md-block">
+    <a href="https://wa.me/+5492645421856" class="btn-wsp" target="_blank">
+        <i class="ri-whatsapp-line"></i>
+    </a>
+  </div>
     
     <!--Header-->
     <header>
         <nav class="navbar navbar-expand-lg bg-white shadow py-3">
             <div class="container-fluid">
               <a class="navbar-brand" href="../index.html">
-                <img src="../assets/favicon/logo/android-icon-72x72.png" alt="logo" id = "logo">
+                <img src="../assets/favicon/logo/android-icon-72x72.png" alt="logo" class="logo">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,9 +56,87 @@
           </nav>
       </header>
 
-    <main class="texto">
-        <h2>Un poco de historia...</h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae nesciunt, laudantium voluptas culpa porro pariatur quos soluta expedita, accusantium nam consectetur cumque. Quos voluptas cupiditate exercitationem nesciunt eos, commodi, repellat quae, nihil ducimus accusantium fugit iusto? Molestias magnam reprehenderit eius qui est consequuntur eos, laboriosam consequatur maiores optio similique rem earum odio aliquam unde, aut illum deleniti voluptate harum quod! Blanditiis nihil deleniti pariatur fugiat veritatis reiciendis quibusdam corrupti, soluta mollitia libero provident aliquam nobis fuga illo hic impedit eligendi nam architecto, repudiandae aliquid. Nam minima quas accusamus incidunt obcaecati ullam commodi porro quaerat minus. Placeat nemo delectus facere quo laboriosam, in distinctio obcaecati quisquam illum dolores nostrum esse dicta eligendi voluptatem, accusantium et magni, nisi quod. Debitis velit culpa molestias excepturi aspernatur facere officia aliquam cumque blanditiis distinctio, facilis saepe laboriosam optio atque tenetur omnis doloremque laborum cum corporis, eveniet, consectetur beatae magni aut. Iste, quam deserunt libero nemo ab excepturi quia dolore dolores itaque enim ratione incidunt ex. Possimus, aliquam totam? Reprehenderit, non tempore. Soluta nisi non obcaecati consequuntur, error in modi, quisquam nemo neque quia dolorum exercitationem vitae excepturi praesentium magni deserunt fugit accusantium odit ut suscipit! Cumque, provident quibusdam molestiae expedita quod ducimus porro exercitationem?
+    <main>
+      <div class="container w-75 bg-light my-5 rounded shadow" >
+        <div class="row align-items-stretch">
+          <div class="col bg-ingresar d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
+
+          </div>
+
+          <div class="col bg-white p-5 rounded-end" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="300" data-aos-duration="1500">
+            <div class="text-end">
+              <i class="ri-restaurant-line"></i>
+            </div>
+
+            <h2 class="fw-bold text-center py-5">Bienvenido</h2>
+
+            <!--Login-->
+            <form action="#">
+              <div class="mb-4">
+                <label for="email">Correo Electronico</label>
+                <input type="email" class="form-control" name="email">
+              </div>
+              <div class="mb-4">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password">
+              </div>
+              <div class="mb-4 form-check">
+                <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                <input type="checkbox" name="connected" class="form-check-input">
+              </div>
+
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Iniciar sesion</buttontupe?>
+              </div>
+
+              <div class="my-3">
+                <span>¿No tienes cuenta? <a href="#">Registrate</a></span>
+                <br>
+                <span><a href="#">Recuperar password</a></span>
+              </div>
+            </form>
+
+            <!-- LOGIN CON REDES SOCIALES -->
+            <div class="container w-100 my-5">
+              <div class="row text-center">
+                <div class="col-12">Iniciar Sesion </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <button class="btn btn-outline-primary w-100 my-1">
+                    <div class="row align-items-center">
+                      <div class="col-2 d-none d-md-block">
+                        <i class="ri-facebook-circle-fill"></i>
+                      </div>
+
+                      <div class="col-12 col-md-10 text-center">
+                        Facebook
+                      </div>
+                    </div>
+                  </button>
+                </div>
+
+                <div class="col">
+                  <button class="btn btn-outline-danger w-100 my-1">
+                    <div class="row align-items-center">
+                      <div class="col-2 d-none d-md-block">
+                        <i class="ri-google-fill"></i>
+                      </div>
+
+                      <div class="col-12 col-md-10 text-center">
+                        Google
+                      </div>
+                    </div>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
     </main>
 
     <!--Footer-->
@@ -53,7 +145,7 @@
           <div class="container">
               <div class="row">
                   <div class="col-lg-4">
-                      <img src="../assets/favicon/logo/android-icon-72x72.png" class="mb-4" alt="logo">
+                      <img src="../assets/favicon/logo/android-icon-72x72.png" class="mb-4 logo" alt="logo">
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quam enim provident, sint sit natus praesentium mollitia. Dolore, mollitia obcaecati.</p>
                       <div class="social-links">
                           <a href="https://es-la.facebook.com/" target="_blanck"><i class="ri-facebook-circle-fill"></i></a>
@@ -63,7 +155,7 @@
                       </div>
                   </div>
 
-                  <div class="col-lg-3 ms-auto">
+                  <div class="col-lg-3 my-4">
                       <h3 class="text-white">CONOCENOS</h3>
                       <a href="./unete.html">Unete al equipo</a>
                       <br>
@@ -72,7 +164,7 @@
                       <a href="./contacto.html">Contáctanos</a>
                   </div>
 
-                  <div class="col-lg-3 mb-4">   
+                  <div class="col-lg-3 my-4">   
                       <h3 class="text-white">MI CUENTA</h3>
                       <a href="./ingresar.html">Ingresar</a>
                       <br>
@@ -97,5 +189,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

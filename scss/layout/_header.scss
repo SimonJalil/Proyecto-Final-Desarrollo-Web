@@ -1,0 +1,79 @@
+.btn {
+    border: 0;
+    padding: 14px 38px; 
+}
+
+.btn-brand{
+    color: #fff;
+    font-weight: 500;
+    border-color: #F58d17;
+    background-color: #F58d17; 
+        &:hover{
+            border-color: #ca7310;
+            background-color: #ca7310;
+            color: white;
+        }
+}
+
+.bg-cover{
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: none !important;
+}
+
+.slide-1{
+    background: linear-gradient(rgba(0, 0, 0, 0.616),rgba(0, 0, 0, 0.63)), url(../assets/images/cover1.jpg);
+}
+
+.slide-2{
+    background: linear-gradient(rgba(0, 0, 0, 0.616),rgba(0, 0, 0, 0.63)), url(../assets/images/cover2.jpg);
+}
+
+.logo{
+    //width: 100%;
+    //border-color: black;
+    //border-style: solid;
+    //border-radius: 50%;
+    //margin: 5px 5px;
+    @include logo;
+}
+
+#heroSlider h6::after,
+#heroSlider h6::before{
+    content: " ";
+    width: 40px;
+    height: 4px;
+    background-color: #ffffff;
+    display:inline-block;
+    margin: 10px;
+    vertical-align: middle; 
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    background-color: rgba(0,0,0,0.6);
+    width: 40px; 
+    height: 70px;
+    margin: auto;
+}
+
+#unete{
+    background-image: url(https://s3.amazonaws.com/orion-eat-app-files/orioneat-prod%2FDWzX3MKty67Rd5cYu-cheff.png);
+}
+
+#cotizar{
+    background-image: url(https://s3.amazonaws.com/orion-eat-app-files/orioneat-prod%2F2Nhru7fEq5SYbCx8e-mochi.png);
+}
+
+.bg-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-size: cover;
+    color: #f14523;
+    width: 100%;
+    height: 500px;
+    font-weight: bold;
+    margin: 20px 0px 20px 0px;
+}

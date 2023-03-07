@@ -1,0 +1,23 @@
+// Carpeta "base"
+@import 'base/reset';
+
+// Carpeta "utilities"
+@import 'utilities/fonts';
+@import 'utilities/functions';
+@import 'utilities/mixins';
+@import 'utilities/variables'; 
+
+// Carpeta "layout"
+@import 'layout/footer';
+@import 'layout/forms';
+@import 'layout/header';
+@import 'layout/body';
+@import 'layout/main';
+
+// Carpeta "Views"
+@import 'views/menu';
+@import 'views/reservacion';
+@import 'views/ingresar';
+
+// Carpeta "Components"
+@import 'components/buttons';
