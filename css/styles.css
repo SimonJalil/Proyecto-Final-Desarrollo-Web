@@ -154,10 +154,14 @@ footer img {
 body {
   font-family: sunday;
   background-color: #e9e6df;
+  width: auto;
+  height: auto;
 }
 
 main {
   min-height: 80vh;
+  width: auto;
+  height: auto;
 }
 
 #intro {

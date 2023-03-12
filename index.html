@@ -17,11 +17,11 @@
 <body class="section">  
     
     <!-- Boton de wzp -->
-    <div class="d-none d-md-block">
-        <a href="https://wa.me/+5492645421856" class="btn-wsp" target="_blank">
-            <i class="ri-whatsapp-line"></i>
-        </a>
-    </div>
+    
+    
+    <a href="https://wa.me/+5492645421856" class="btn-wsp" target="_blank">
+        <i class="ri-whatsapp-line"></i>
+    </a>
     
 
     <!-- Header  -->
@@ -94,12 +94,20 @@
         </button>
     </div>
 
-    <br>
+    <!--
+    data-aos="fade-right" data-aos-duration="1000"
+data-aos="fade-left" data-aos-duration="1000"
+data-aos="fade-up" data-aos-duration="3000"
+
+
+data-aos="fade-right" data-aos-duration="1000"
+data-aos="fade-left" data-aos-duration="1000"
+    -->
     
 
     <!-- Main -->
     <main>
-        <section id="intro" class="d-none d-sm-block" data-aos="flip-up" data-aos-duration="2000">
+        <section id="intro" class="d-none d-sm-block my-4" data-aos="flip-up" data-aos-duration="2000">
             <div class="titulo-intro">
                 <h1 class="text-center">
                     JUNTOS SOMOS FAST FOOD
@@ -130,21 +138,21 @@
             </div>
             
             <div>
-                <h3 class="text-center" data-aos="fade-left" data-aos-duration="1000">¿Te gustaria formar parte del equipo de Fast Food? ¡Trabaja con nosotros!</h3>
+                <h3 class="text-center p-4" data-aos="fade-left" data-aos-duration="1000">¿Te gustaria formar parte del equipo de Fast Food? ¡Trabaja con nosotros!</h3>
             </div>
 
-            <div data-aos="fade-up" data-aos-duration="3000">
-                <a href="./pages/unete.html" class="btn-main" >Haz click aquí</a>
+            <div >
+                <a href="./pages/unete.html" class="btn-main" data-aos="fade-up" data-aos-duration="3000">Haz click aquí</a>
             </div>
         </section>
 
         <section id="cotizar" class="bg-img">
             <div>
-                <h1 data-aos="fade-right" data-aos-duration="1000">¿TIENES UN EVENTO?</h1>
+                <h1 >¿TIENES UN EVENTO?</h1>
             </div>
             
             <div>
-                <h3 data-aos="fade-left" data-aos-duration="1000">Cotiza con nosotros</h3>
+                <h3 >Cotiza con nosotros</h3>
             </div>
 
             <div data-aos="fade-up" data-aos-duration="3000"> 
@@ -160,7 +168,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
-                        <img src="./assets/favicon/logo/android-icon-72x72.png" class="mb-4 logo" alt="logo">
+                        <img src="./assets/favicon/logo/android-icon-72x72.png" class="mb-4 logo">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quam enim provident, sint sit natus praesentium mollitia. Dolore, mollitia obcaecati.</p>
                         <div class="social-links">
                             <a href="https://es-la.facebook.com/" target="_blanck"><i class="ri-facebook-circle-fill"></i></a>
@@ -207,7 +215,7 @@
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({disable: 'mobile'});
     </script>
 </body>
 </html>
